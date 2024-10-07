@@ -4,8 +4,15 @@ import { useState } from "react";
 
 export default function SeachBox({ updateInfo }) {
   let [city, setCity] = useState("");
-  let API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  let API_KEY = "5cc26238edc88223d7e1a525e46e5557";
+
+  // let API_URL = "https://api.openweathermap.org/data/2.5/weather";
+  // let API_KEY = "5cc26238edc88223d7e1a525e46e5557";
+
+  console.log("API Key:", process.env.REACT_APP_API_KEY);
+  console.log("API URL:", process.env.REACT_APP_API_URL);
+
+  let API_URL = process.env.REACT_APP_API_URL;
+  let API_KEY = process.env.REACT_APP_API_KEY;
 
   let getWeatherInfo = async () => {
     // let response = await fetch(
