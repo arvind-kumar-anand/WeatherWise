@@ -73,7 +73,7 @@ export default function SeachBox({ updateInfo }) {
 
   return (
     <>
-      <h3>Search By City Name</h3>
+      <h3>Search Weather By City Name</h3>
       <form onSubmit={handleSubmit}>
         <TextField
           id="city"
