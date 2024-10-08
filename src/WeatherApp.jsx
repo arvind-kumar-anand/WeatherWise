@@ -25,7 +25,9 @@ export default function WeatherApp() {
 
   return (
     <div>
-      <h1> Weather Wise Made by &#10084; Arvind</h1>
+      <h1>
+        Weather Wise Made with<span style={{ color: "red" }}>❤️</span>by Arvind
+      </h1>
       <SearchBox updateInfo={updateInfo} />
       <InfoBox info={weatherInfo} />
     </div>
