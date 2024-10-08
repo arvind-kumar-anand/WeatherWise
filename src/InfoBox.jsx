@@ -42,7 +42,7 @@ export default function InfoBox({ info }) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              The weather in {info.name}{" "}
+              The Weather in {info.name}{" "}
               {info.humidity > 80 ? (
                 <BeachAccessIcon />
               ) : info.temperature > 15 ? (
